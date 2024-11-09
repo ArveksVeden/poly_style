@@ -21,6 +21,7 @@ int main(void) {
         currentUInt++;
     }
     printf("(max) unsigned int = %u\n", maxUInt);
+    printf("(min) unsigned int = 0\n");
 
     short currentShort = 0, maxShort = 0;
     while (currentShort >= maxShort) {
@@ -42,6 +43,7 @@ int main(void) {
         currentUShort++;
     }
     printf("(max) unsigned short = %hu\n", maxUShort);
+    printf("(min) unsigned short = 0\n");
 
     long currentLong = 0, maxLong = 0;
     while (currentLong >= maxLong) {
@@ -63,6 +65,7 @@ int main(void) {
         currentULong++;
     }
     printf("(max) unsigned long = %lu\n", maxULong);
+    printf("(min) unsigned long = 0\n");
 
     long long currentLongLong = 1, maxLongLong = 1;
     while (currentLongLong >= maxLongLong) {
@@ -83,24 +86,28 @@ int main(void) {
     maxULL = maxULL * 2 - 1;
 
     printf("(max) unsigned long long = %llu\n", maxULL);
+    printf("(min) unsigned long long = 0\n");
 
-    unsigned char currentUChar = 1, maxUChar = 1;
+    unsigned char currentUChar = 0, maxUChar = 0;
     while (currentUChar >= maxUChar) {
         maxUChar = currentUChar;
-        currentUChar *= 2;
+        currentUChar += 1;
     }
-    maxUChar = maxUChar * 2 - 1;
     printf("(max) unsigned char = %u\n", maxUChar);
+    printf("(min) unsigned char = 0\n");
 
     char currentChar = 1, maxChar = 1;
     while (currentChar >= maxChar) {
         maxChar = currentChar;
-        currentChar *= 2;
+        currentChar += 1;
     }
-    maxChar = maxChar * 2 - 1;
     printf("(max) char = %d\n", maxChar);
 
-    maxChar = maxChar * (-1) - 1;
+    currentChar = 1; maxChar = 1;
+    while (currentChar <= maxChar) {
+        maxChar = currentChar;
+        currentChar -= 1;
+    }
     printf("(min) char = %d\n", maxChar);
 
     return 0;

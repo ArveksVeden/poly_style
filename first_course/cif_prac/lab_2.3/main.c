@@ -33,11 +33,16 @@ int main(void)
             cout = 0;
         }
     }
-
-    printf("%d.", int_res);
-    for (int i = 0; i <= cout; i++)
+    if (frac3[0] == 0 && frac3[1] == 0 && frac3[2] == 0)
     {
-        printf("%d", frac3[i]);
+        printf("%d", int_res);
+    } else
+    {
+        printf("%d.", int_res);
+        for (int i = 0; i <= cout; i++)
+        {
+            printf("%d", frac3[i]);
+        }
     }
 
     return 0;
