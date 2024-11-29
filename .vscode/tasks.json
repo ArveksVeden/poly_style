@@ -1,9 +1,42 @@
 {
+    "version": "2.0.0",
     "tasks": [
         {
+            "label": "Build C",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Generated task for compiling C programs."
+        },
+        {
+            "label": "Build C++",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Generated task for compiling C++ programs."
+        },
+        {
             "type": "cppbuild",
             "label": "C/C++: gcc.exe сборка активного файла",
-            "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe",
+            "command": "C:/mingw64/bin/gcc.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
@@ -12,50 +45,10 @@
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
-                "cwd": "${fileDirname}"
+                "cwd": "C:/mingw64/bin"
             },
             "problemMatcher": [
                 "$gcc"
-            ],
-            "group": "build",
-            "detail": "Задача создана отладчиком."
-        },
-        {
-            "type": "cppbuild",
-            "label": "C/C++: gcc.exe сборка активного файла",
-            "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe",
-            "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
-            ],
-            "options": {
-                "cwd": "${fileDirname}"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": "build",
-            "detail": "компилятор: C:\\msys64\\ucrt64\\bin\\gcc.exe"
-        },
-        {
-            "type": "cppbuild",
-            "label": "C/C++: cl.exe сборка активного файла",
-            "command": "cl.exe",
-            "args": [
-                "/Zi",
-                "/EHsc",
-                "/nologo",
-                "/Fe${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "${file}"
-            ],
-            "options": {
-                "cwd": "${fileDirname}"
-            },
-            "problemMatcher": [
-                "$msCompile"
             ],
             "group": {
                 "kind": "build",
@@ -63,6 +56,5 @@
             },
             "detail": "Задача создана отладчиком."
         }
-    ],
-    "version": "2.0.0"
+    ]
 }

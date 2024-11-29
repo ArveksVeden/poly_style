@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-#define MACHINE_EPSILON pow(2, -52) // Определение машинной точности для типа double: 2 в степени -52 - разряд мантисы
+#define MACHINE_EPSILON pow(2, -52)
 
 // Функция для вычисления суммы ряда Тейлора для функции синуса
 double taylor_series_sum(double x, int terms, double epsilon) {
@@ -21,20 +21,19 @@ double taylor_series_sum(double x, int terms, double epsilon) {
             printf("Сумма ряда после %d членов: %.15lf\n", terms, result);
         }
 
-        // Проверка на достижение машинной точности
         // Если абсолютное значение текущего члена меньше epsilon, то можно остановить вычисления
         if (fabs(term_value) < epsilon) {
-            printf("Сумма ряда с максимально возможной точностью: %.15lf\n", result);
-            break;  // Выход из цикла, так как дальнейшие члены незначительны
+            printf("Сумма ряда с максимально возможной точностью: %.15lf\n, %d", result, count);
+            break;
         }
     }
 
-    return result;  // Возвращаем итоговую сумму ряда
+    return result;
 }
 
 int main(void) {
-    double x_value;  // Переменная для хранения значения x
-    int term_count;  // Переменная для хранения количества членов ряда
+    double x_value;
+    int term_count;
 
     printf("Введите количество членов и значение x: ");
     scanf("%d %lf", &term_count, &x_value);
