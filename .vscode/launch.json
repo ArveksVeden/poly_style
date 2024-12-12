@@ -1,6 +1,7 @@
 {
     "version": "0.2.0",
     "configurations": [
+
         {
             "name": "Run C/C++",
             "type": "cppvsdbg",
@@ -8,7 +9,7 @@
             "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}/first_course/cif_prac/lab_4.2",
             "environment": [],
             "console": "integratedTerminal"
         },
@@ -19,7 +20,7 @@
             "program": "${workspaceFolder}/a.exe",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${fileDirname}",
+            "cwd": "${workspaceFolder}/first_course/cif_prac/lab_4.2",
             "environment": [],
             "externalConsole": true,
             "MIMode": "gdb",
