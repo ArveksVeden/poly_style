@@ -1,0 +1,38 @@
+int myproc1()
+{
+   const char* nc = " Don't touch text /* inside */ quoted strings ";
+
+   
+   printf(" This is // not comment ");
+   
+   printf(" This is /* not comment */ too");
+
+   myproc2();  
+
+    myproc3();
+
+   myproc4();
+
+   
+
+   myproc5();
+
+   
+
+   myproc6();
+
+   printf(  " This is multiline \
+string constant                 \
+without /* comment. Don't /*  \
+touch me. */ please" );
+
+   
+
+   myproc7();
+
+     
+
+   myproc8();
+
+   return 1;
+}
