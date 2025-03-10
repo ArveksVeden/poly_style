@@ -1,0 +1,24 @@
+ollydbg 
+http://www.ollydbg.de/
+https://wasm.in/blogs/vvedenie-v-krehking-s-nulja-ispolzuja-ollydbg-glava-1.433
+
+IDA Pro
+http://www.idasoft.ru/idapro/getfreeida/
+Книги Криса Касперски по IDA (Образ мышления IDA)
+
+HIEW
+https://www.youtube.com/playlist?list=PLNOfNDUC-diyGmGkln8mAEQ7-awbDBIVM
+
+CRC
+https://xakep.ru/2004/03/30/21788/
+https://sar.informatik.hu-berlin.de/research/publications/SAR-PR-2006-05/SAR-PR-2006-05_.pdf
+
+ACL
+https://msdn.microsoft.com/en-us/library/windows/desktop/aa379283(v=vs.85).aspx
+https://msdn.microsoft.com/en-us/library/windows/desktop/aa446595(v=vs.85).aspx
+https://msdn.microsoft.com/en-us/library/windows/desktop/aa379620(v=vs.85).aspx
+
+Переполнение буфера
+https://habrahabr.ru/post/266591/
+https://www.blackhat.com/presentations/bh-usa-04/bh-us-04-silberman/bh-us-04-silberman-paper.pdf
+https://crypto.stanford.edu/cs155/papers/cowan-vulnerability.pdf
